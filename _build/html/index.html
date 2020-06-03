@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to the Data Assimilation Research Testbed &mdash; DART Manhattan documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Brief History" href="introduction/history.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#">
+          
+
+          
+            
+            <img src="_static/logo-wordmark-light-dart.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction/history.html">Brief History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction/philosophy.html">DART Design Philosophy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Elements of DART</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="the_elements_of_dart/model-state.html">Model State</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the_elements_of_dart/observations.html">Observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the_elements_of_dart/forward-operators.html">Forward Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the_elements_of_dart/filters.html">Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the_elements_of_dart/localization.html">Localization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the_elements_of_dart/inflation.html">Inflation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Running DART</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="running_dart/quick-start.html">Quick-start for the Impatient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running_dart/system-requirements.html">System Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running_dart/downloading.html">Downloading: Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running_dart/building.html">Building: mkmf &amp; preprocess</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running_dart/running.html">Running: input.nml</a></li>
+<li class="toctree-l1"><a class="reference internal" href="running_dart/assimilation-cycle.html">An Assimilation Cycle</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Supported Models</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="supported_models/simple-models.html">Simple Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_models/large-geophysical-models.html">Large Geophysical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_models/previously-supported-models.html">Previously Supported Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_models/add-your-model.html">Add Your Model to DART</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Diagnostics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="diagnostics/dart-qc-codes.html">DART Quality Control (QC) Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diagnostics/assimilation-effective.html">Was the Assimilation Effective?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diagnostics/observation-space-diagnostics.html">Observation-Space Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diagnostics/state-space-diagnostics.html">State-Space Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diagnostics/matlab-diagnostic-scripts.html">MATLAB® Diagnostic Scripts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Further Aspects of DA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="further_aspects_of_da/perfect-model-experiment.html">Perfect Model Experiment (OSSE)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="further_aspects_of_da/initial-ensemble-construction.html">Initial Ensemble Construction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="further_aspects_of_da/localization-tuning.html">Localization Tuning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="further_aspects_of_da/inflation-tuning.html">Inflation Tuning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Fortran-FOSS-Programmers/ford">Example External Link</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contributors' Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributors_guide/pull-requests.html">Pull Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors_guide/style-guide.html">Style Guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">DART</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to the Data Assimilation Research Testbed</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-the-data-assimilation-research-testbed">
+<h1>Welcome to the Data Assimilation Research Testbed<a class="headerlink" href="#welcome-to-the-data-assimilation-research-testbed" title="Permalink to this headline">¶</a></h1>
+<p>The following are examples of useful features that are built into reStructuredText. All of the examples below are entered as plain text in the repository and are rendered here as html using a syntax parser.</p>
+<p>The table of contents to the left are also entered as plain text and the parser organizes them into an ordered hierarchy with collapsable submenus and “Previous” and “Next” links between each page. Click on <a class="reference internal" href="the_elements_of_dart/observations.html"><span class="doc">Observations</span></a> for an example.</p>
+<div class="section" id="full-citations-in-footnotes-mathematical-symbols">
+<h2>Full Citations in Footnotes &amp; Mathematical Symbols<a class="headerlink" href="#full-citations-in-footnotes-mathematical-symbols" title="Permalink to this headline">¶</a></h2>
+<p>The Lorenz (1963) <a class="footnote-reference brackets" href="#id2" id="id1">1</a> model is specified by a set of three ordinary differential equations:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\frac{dx}{dt} = \sigma(y-x)\\\frac{dy}{dt} = x(\rho-z)-y\\\frac{dz}{dt} = xy-\beta z\end{aligned}\end{align} \]</div>
+<p>where the coefficients are given default values in DART: <span class="math notranslate nohighlight">\(\rho=28\)</span>, <span class="math notranslate nohighlight">\(\sigma=10\)</span> and <span class="math notranslate nohighlight">\(\beta=8/3\)</span>.</p>
+</div>
+<div class="section" id="syntax-highlighting-in-code-snippets-and-namelists">
+<h2>Syntax Highlighting in Code Snippets and Namelists<a class="headerlink" href="#syntax-highlighting-in-code-snippets-and-namelists" title="Permalink to this headline">¶</a></h2>
+<p>Fortran syntax can be highlighted both in namelists:</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="p">&amp;</span><span class="n">perfect_model_obs_nml</span>
+   <span class="n">single_file_out</span>            <span class="o">=</span> <span class="p">.</span><span class="n">true</span><span class="p">.</span>
+   <span class="n">output_state_files</span>         <span class="o">=</span> <span class="s2">&quot;perfect_output.nc&quot;</span>
+   <span class="n">output_interval</span>            <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="o">/</span>
+</pre></div>
+</div>
+<p>and in code snippets:</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">module </span><span class="n">model_mod</span>
+
+   <span class="k">use        </span><span class="n">types_mod</span><span class="p">,</span>      <span class="n">only</span> <span class="p">:</span> <span class="n">r8</span><span class="p">,</span> <span class="n">i8</span><span class="p">,</span> <span class="n">i4</span>
+
+   <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="kd">::</span>  <span class="n">sigma</span> <span class="o">=</span> <span class="mi">1</span><span class="mf">0.0_r8</span>
+   <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="kd">::</span>      <span class="n">r</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">8.0_r8</span>
+   <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="kd">::</span>      <span class="n">b</span> <span class="o">=</span> <span class="mf">8.0_r8</span> <span class="o">/</span> <span class="mf">3.0_r8</span>
+   <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="kd">::</span> <span class="n">deltat</span> <span class="o">=</span> <span class="mf">0.01_r8</span>
+   <span class="kt">integer</span>  <span class="kd">::</span> <span class="n">time_step_days</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="kt">integer</span>  <span class="kd">::</span> <span class="n">time_step_seconds</span> <span class="o">=</span> <span class="mi">3600</span>
+
+   <span class="c">! compute the lorenz model dt from standard equations</span>
+
+   <span class="n">dt</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">sigma</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+   <span class="n">dt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0_r8</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="n">r</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+   <span class="n">dt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+ <span class="k">end module </span><span class="n">model_mod</span>
+</pre></div>
+</div>
+<p>Syntax highlighting also works in other languages such as bash:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># /glade/u/home/johnsonb/.bashrc</span>
+module load ncview
+module load diffuse
+</pre></div>
+</div>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>A brief introduction to data assimilation and DART’s design philosopy.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="introduction/history.html"><span class="doc">Brief History</span></a></p></li>
+<li><p><a class="reference internal" href="introduction/philosophy.html"><span class="doc">DART Design Philosophy</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="the-elements-of-dart">
+<h2>The Elements of DART<a class="headerlink" href="#the-elements-of-dart" title="Permalink to this headline">¶</a></h2>
+<p>These describe the necessary elements of an assimilation system.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="the_elements_of_dart/model-state.html"><span class="doc">Model State</span></a></p></li>
+<li><p><a class="reference internal" href="the_elements_of_dart/observations.html"><span class="doc">Observations</span></a></p></li>
+<li><p><a class="reference internal" href="the_elements_of_dart/forward-operators.html"><span class="doc">Forward Operators</span></a></p></li>
+<li><p><a class="reference internal" href="the_elements_of_dart/filters.html"><span class="doc">Filters</span></a></p></li>
+<li><p><a class="reference internal" href="the_elements_of_dart/localization.html"><span class="doc">Localization</span></a></p></li>
+<li><p><a class="reference internal" href="the_elements_of_dart/inflation.html"><span class="doc">Inflation</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="running-dart">
+<h2>Running DART<a class="headerlink" href="#running-dart" title="Permalink to this headline">¶</a></h2>
+<p>Instructions for downloading and building DART.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="running_dart/quick-start.html"><span class="doc">Quick-start for the Impatient</span></a></p></li>
+<li><p><a class="reference internal" href="running_dart/system-requirements.html"><span class="doc">System Requirements</span></a></p></li>
+<li><p><a class="reference internal" href="running_dart/downloading.html"><span class="doc">Downloading: Github Repository</span></a></p></li>
+<li><p><a class="reference internal" href="running_dart/building.html"><span class="doc">Building: mkmf &amp; preprocess</span></a></p></li>
+<li><p><a class="reference internal" href="running_dart/running.html"><span class="doc">Running: input.nml</span></a></p></li>
+<li><p><a class="reference internal" href="running_dart/assimilation-cycle.html"><span class="doc">An Assimilation Cycle</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="supported-models">
+<h2>Supported Models<a class="headerlink" href="#supported-models" title="Permalink to this headline">¶</a></h2>
+<p>A description of the models supported by DART.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="supported_models/simple-models.html"><span class="doc">Simple Models</span></a></p></li>
+<li><p><a class="reference internal" href="supported_models/large-geophysical-models.html"><span class="doc">Large Geophysical Models</span></a></p></li>
+<li><p><a class="reference internal" href="supported_models/previously-supported-models.html"><span class="doc">Previously Supported Models</span></a></p></li>
+<li><p><a class="reference internal" href="supported_models/add-your-model.html"><span class="doc">Add Your Model to DART</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="diagnostics">
+<h2>Diagnostics<a class="headerlink" href="#diagnostics" title="Permalink to this headline">¶</a></h2>
+<p>Available diagnostics to apply to your assimilation.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="diagnostics/dart-qc-codes.html"><span class="doc">DART Quality Control (QC) Codes</span></a></p></li>
+<li><p><a class="reference internal" href="diagnostics/assimilation-effective.html"><span class="doc">Was the Assimilation Effective?</span></a></p></li>
+<li><p><a class="reference internal" href="diagnostics/observation-space-diagnostics.html"><span class="doc">Observation-Space Diagnostics</span></a></p></li>
+<li><p><a class="reference internal" href="diagnostics/state-space-diagnostics.html"><span class="doc">State-Space Diagnostics</span></a></p></li>
+<li><p><a class="reference internal" href="diagnostics/matlab-diagnostic-scripts.html"><span class="doc">MATLAB® Diagnostic Scripts</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="further-aspects-of-da">
+<h2>Further Aspects of DA<a class="headerlink" href="#further-aspects-of-da" title="Permalink to this headline">¶</a></h2>
+<p>Guidance for additional aspects of Data Assimilation.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="further_aspects_of_da/perfect-model-experiment.html"><span class="doc">Perfect Model Experiment (OSSE)</span></a></p></li>
+<li><p><a class="reference internal" href="further_aspects_of_da/initial-ensemble-construction.html"><span class="doc">Initial Ensemble Construction</span></a></p></li>
+<li><p><a class="reference internal" href="further_aspects_of_da/localization-tuning.html"><span class="doc">Localization Tuning</span></a></p></li>
+<li><p><a class="reference internal" href="further_aspects_of_da/inflation-tuning.html"><span class="doc">Inflation Tuning</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="ford-api">
+<h2>FORD API<a class="headerlink" href="#ford-api" title="Permalink to this headline">¶</a></h2>
+<p>Example link to external resource.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/Fortran-FOSS-Programmers/ford">Example External Link</a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="contributors-guide">
+<h2>Contributors’ Guide<a class="headerlink" href="#contributors-guide" title="Permalink to this headline">¶</a></h2>
+<p>A guide for adding your code to DART.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="contributors_guide/pull-requests.html"><span class="doc">Pull Requests</span></a></p></li>
+<li><p><a class="reference internal" href="contributors_guide/style-guide.html"><span class="doc">Style Guide</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Lorenz, Edward N. (1963) “Deterministic Nonperiodic Flow.” <em>Journal of the Atmospheric Sciences</em> <strong>20</strong> (2): 130–141.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="introduction/history.html" class="btn btn-neutral float-right" title="Brief History" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, UCAR
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
