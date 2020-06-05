@@ -14,16 +14,6 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
-# If your documentation needs a minimal Sphinx version, state it here.
-needs_sphinx = '2.1'
-
-extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.mathjax',
-    'sphinx-prompt'
-]
-
-
 # -- Project information -----------------------------------------------------
 
 project = 'DART'
@@ -33,6 +23,7 @@ author = 'Data Assimilation Research Section'
 # The full version, including alpha/beta/rc tags
 release = 'Manhattan'
 
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
@@ -40,6 +31,8 @@ release = 'Manhattan'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.mathjax'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
