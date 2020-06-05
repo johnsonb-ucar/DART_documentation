@@ -11,12 +11,16 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+
+# If your documentation needs a minimal Sphinx version, state it here.
+needs_sphinx = '2.1'
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.mathjax'
+    'sphinx.ext.mathjax',
+    'sphinx-prompt'
 ]
 
 

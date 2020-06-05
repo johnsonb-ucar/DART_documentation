@@ -5,66 +5,6 @@
 
 Welcome to the Data Assimilation Research Testbed
 =================================================
-The following are examples of useful features that are built into reStructuredText. All of the examples below are entered as plain text in the repository and are rendered here as html using a syntax parser.
-
-The table of contents to the left are also entered as plain text and the parser organizes them into an ordered hierarchy with collapsable submenus and "Previous" and "Next" links between each page. Click on :doc:`/the_elements_of_dart/observations` for an example.
-
-Full Citations in Footnotes & Mathematical Symbols
---------------------------------------------------
-The Lorenz (1963) [1]_ model is specified by a set of three ordinary differential equations:
-
-.. math::
-
-   \frac{dx}{dt} = \sigma(y-x)
-
-   \frac{dy}{dt} = x(\rho-z)-y
-
-   \frac{dz}{dt} = xy-\beta z
-
-where the coefficients are given default values in DART: :math:`\rho=28`, :math:`\sigma=10` and :math:`\beta=8/3`.
-
-Syntax Highlighting in Code Snippets and Namelists
---------------------------------------------------
-Fortran syntax can be highlighted both in namelists:
-
-.. code-block:: fortran
-
-   &perfect_model_obs_nml
-      single_file_out            = .true.
-      output_state_files         = "perfect_output.nc"
-      output_interval            = 1,
-   /
-
-and in code snippets:
-
-.. code-block:: fortran
-
-   module model_mod
-
-      use        types_mod,      only : r8, i8, i4
-
-      real(r8) ::  sigma = 10.0_r8
-      real(r8) ::      r = 28.0_r8
-      real(r8) ::      b = 8.0_r8 / 3.0_r8
-      real(r8) :: deltat = 0.01_r8
-      integer  :: time_step_days = 0
-      integer  :: time_step_seconds = 3600
-
-      ! compute the lorenz model dt from standard equations
-
-      dt(1) = sigma * (x(2) - x(1))
-      dt(2) = -1.0_r8*x(1)*x(3) + r*x(1) - x(2)
-      dt(3) = x(1)*x(2) - b*x(3)
-
-    end module model_mod
-
-Syntax highlighting also works in other languages such as bash:
-
-.. code-block:: bash
-
-   # /glade/u/home/johnsonb/.bashrc
-   module load ncview
-   module load diffuse
 
 Introduction
 ------------
@@ -223,5 +163,3 @@ A guide for adding your code to DART.
 
  /contributors_guide/pull-requests
  /contributors_guide/style-guide
-
-.. [1] Lorenz, Edward N. (1963) “Deterministic Nonperiodic Flow.” *Journal of the Atmospheric Sciences* **20** (2): 130–141.

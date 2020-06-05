@@ -87,7 +87,14 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Brief History</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Brief History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#examples-of-useful-syntax-provided-by-restructuredtext">Examples of Useful Syntax provided by reStructuredText</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#full-citations-in-footnotes-mathematical-symbols">Full Citations in Footnotes &amp; Mathematical Symbols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#syntax-highlighting-in-code-snippets-and-namelists">Syntax Highlighting in Code Snippets and Namelists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#built-in-syntax-for-notes-and-warnings">Built-In Syntax for Notes and Warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ability-to-embed-videos">Ability to Embed Videos</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="philosophy.html">DART Design Philosophy</a></li>
 </ul>
 <p class="caption"><span class="caption-text">The Elements of DART</span></p>
@@ -204,6 +211,82 @@
             
   <div class="section" id="brief-history">
 <h1>Brief History<a class="headerlink" href="#brief-history" title="Permalink to this headline">¶</a></h1>
+<p>This is a placeholder page. We’re using it to demonstrate useful syntax provided by reStructuredText.</p>
+<div class="section" id="examples-of-useful-syntax-provided-by-restructuredtext">
+<h2>Examples of Useful Syntax provided by reStructuredText<a class="headerlink" href="#examples-of-useful-syntax-provided-by-restructuredtext" title="Permalink to this headline">¶</a></h2>
+<p>The following are examples of useful features that are built into reStructuredText. All of the examples below are entered as plain text in the repository and are rendered here as html using a syntax parser.</p>
+<p>The table of contents to the left are also entered as plain text and the parser organizes them into an ordered hierarchy with collapsable submenus and “Previous” and “Next” links between each page. Click on <a class="reference internal" href="../the_elements_of_dart/observations.html"><span class="doc">Observations</span></a> for an example.</p>
+</div>
+<div class="section" id="full-citations-in-footnotes-mathematical-symbols">
+<h2>Full Citations in Footnotes &amp; Mathematical Symbols<a class="headerlink" href="#full-citations-in-footnotes-mathematical-symbols" title="Permalink to this headline">¶</a></h2>
+<p>The Lorenz (1963) <a class="footnote-reference brackets" href="#id2" id="id1">1</a> model is specified by a set of three ordinary differential equations:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\frac{dx}{dt} = \sigma(y-x)\\\frac{dy}{dt} = x(\rho-z)-y\\\frac{dz}{dt} = xy-\beta z\end{aligned}\end{align} \]</div>
+<p>where the coefficients are given default values in DART: <span class="math notranslate nohighlight">\(\rho=28\)</span>, <span class="math notranslate nohighlight">\(\sigma=10\)</span> and <span class="math notranslate nohighlight">\(\beta=8/3\)</span>.</p>
+</div>
+<div class="section" id="syntax-highlighting-in-code-snippets-and-namelists">
+<h2>Syntax Highlighting in Code Snippets and Namelists<a class="headerlink" href="#syntax-highlighting-in-code-snippets-and-namelists" title="Permalink to this headline">¶</a></h2>
+<p>Fortran syntax can be highlighted both in namelists:</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="p">&amp;</span><span class="n">perfect_model_obs_nml</span>
+   <span class="n">single_file_out</span>            <span class="o">=</span> <span class="p">.</span><span class="n">true</span><span class="p">.</span>
+   <span class="n">output_state_files</span>         <span class="o">=</span> <span class="s2">&quot;perfect_output.nc&quot;</span>
+   <span class="n">output_interval</span>            <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="o">/</span>
+</pre></div>
+</div>
+<p>and in code snippets:</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">module </span><span class="n">model_mod</span>
+
+   <span class="k">use        </span><span class="n">types_mod</span><span class="p">,</span>      <span class="n">only</span> <span class="p">:</span> <span class="n">r8</span><span class="p">,</span> <span class="n">i8</span><span class="p">,</span> <span class="n">i4</span>
+
+   <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="kd">::</span>  <span class="n">sigma</span> <span class="o">=</span> <span class="mi">1</span><span class="mf">0.0_r8</span>
+   <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="kd">::</span>      <span class="n">r</span> <span class="o">=</span> <span class="mi">2</span><span class="mf">8.0_r8</span>
+   <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="kd">::</span>      <span class="n">b</span> <span class="o">=</span> <span class="mf">8.0_r8</span> <span class="o">/</span> <span class="mf">3.0_r8</span>
+   <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="kd">::</span> <span class="n">deltat</span> <span class="o">=</span> <span class="mf">0.01_r8</span>
+   <span class="kt">integer</span>  <span class="kd">::</span> <span class="n">time_step_days</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="kt">integer</span>  <span class="kd">::</span> <span class="n">time_step_seconds</span> <span class="o">=</span> <span class="mi">3600</span>
+
+   <span class="c">! compute the lorenz model dt from standard equations</span>
+
+   <span class="n">dt</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">=</span> <span class="n">sigma</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+   <span class="n">dt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0_r8</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="n">r</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+   <span class="n">dt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span><span class="o">*</span><span class="n">x</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+ <span class="k">end module </span><span class="n">model_mod</span>
+</pre></div>
+</div>
+<p>Syntax highlighting also works in other languages such as bash:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># /glade/u/home/johnsonb/.bashrc</span>
+module load ncview
+module load diffuse
+</pre></div>
+</div>
+</div>
+<div class="section" id="built-in-syntax-for-notes-and-warnings">
+<h2>Built-In Syntax for Notes and Warnings<a class="headerlink" href="#built-in-syntax-for-notes-and-warnings" title="Permalink to this headline">¶</a></h2>
+<p>We can intersperse the following note and caution boxes within the documentation to emphasize important points.</p>
+<p>Notes can be used for friendly points of emphasis.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It’s important to test your setup by assimilating a single observation first.</p>
+</div>
+<p>Warnings can be used to illustrate requirements that must be followed by the user.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Your netCDF library must have been compiled with the same compiler (including version) that you will use to compile DART and also must include the F90 interfaces. In practice this means that even if you have a netCDF distribution on your system, you may need to recompile netCDF in a separate location to match the compiler you will use for DART.</p>
+</div>
+</div>
+<div class="section" id="ability-to-embed-videos">
+<h2>Ability to Embed Videos<a class="headerlink" href="#ability-to-embed-videos" title="Permalink to this headline">¶</a></h2>
+<p>We can also embed videos to highlight specific points.</p>
+<div style="text-align: center; margin-bottom: 2em;">
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/GofCsx2apP4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div><dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Lorenz, Edward N. (1963) “Deterministic Nonperiodic Flow.” <em>Journal of the Atmospheric Sciences</em> <strong>20</strong> (2): 130–141.</p>
+</dd>
+</dl>
+</div>
 </div>
 
 
