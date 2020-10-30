@@ -6,6 +6,10 @@
 Welcome to the Data Assimilation Research Testbed
 =================================================
 
+- doc.dart.ucar.edu
+- lab.dart.ucar.edu
+- api.dart.ucar.edu
+
 Introduction
 ------------
 
